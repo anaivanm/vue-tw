@@ -22,36 +22,6 @@
             <span class="text-gray-700 mx-2">Internship &middot;</span>
             <span class="text-green-400 mx-2">95% match</span>
           </p>
-          <a href="#" class="m-2">
-            <svg width="16" height="14.4"><g data-name="Group 3095"><g data-name="Group 2734"><g data-name="Group 2733"><path data-name="Path 1596" d="M14 7l-1 1-1 1-2 2-2 2-2-2-2-2-1-1-1-1a4 4 0 010-1 4 4 0 01-1-1 4 4 0 010-1 4 4 0 011-1 4 4 0 011-1 4 4 0 011-1 4 4 0 011 0 4 4 0 011 1 4 4 0 011 0 9 9 0 011 1 9 9 0 011-1 4 4 0 011 0 4 4 0 011-1 4 4 0 011 0 4 4 0 011 1 4 4 0 011 1 4 4 0 011 1 4 4 0 010 1 4 4 0 01-1 1 4 4 0 010 1 1 1 0 000 1 1 1 0 001 0 5 5 0 001-1 5 5 0 000-1 5 5 0 000-1 5 5 0 00-1-3 5 5 0 00-2-2 5 5 0 00-3 0 5 5 0 00-2 1 8 8 0 000 1V1a5 5 0 00-2-1 5 5 0 00-4 1 5 5 0 00-2 3 5 5 0 001 3 6 6 0 001 1l1 1 1 2 2 1 1 2h2l2-2 1-2 2-1 1-1a1 1 0 000-1 1 1 0 00-1 0z" fill="#383f4c"/></g></g></g>
-            </svg>
-          </a>
-        </div>
-        <div class="flex flex-no-wrap pb-2 border-b-2">
-          <div class="h-12 w-12 rounded shadow bg-blue-200 my-6 ml-3"></div>
-          <p class="flex-1 m-4 text-xs tracking-wide leading-loose">Student assistant for MedTech startup<br>
-            <span class="text-gray-500 tracking-wide leading-loose">BlueSense Diagnostics Aps</span><br>
-            <span class="text-gray-700 mr-2">Copenhagen &middot;</span>
-            <span class="text-gray-700 mx-2">Internship &middot;</span>
-            <span class="text-green-400 mx-2">95% match</span>
-          </p>
-          <a href="#" class="m-2">
-            <svg width="16" height="14.4"><g data-name="Group 3095"><g data-name="Group 2734"><g data-name="Group 2733"><path data-name="Path 1596" d="M14 7l-1 1-1 1-2 2-2 2-2-2-2-2-1-1-1-1a4 4 0 010-1 4 4 0 01-1-1 4 4 0 010-1 4 4 0 011-1 4 4 0 011-1 4 4 0 011-1 4 4 0 011 0 4 4 0 011 1 4 4 0 011 0 9 9 0 011 1 9 9 0 011-1 4 4 0 011 0 4 4 0 011-1 4 4 0 011 0 4 4 0 011 1 4 4 0 011 1 4 4 0 011 1 4 4 0 010 1 4 4 0 01-1 1 4 4 0 010 1 1 1 0 000 1 1 1 0 001 0 5 5 0 001-1 5 5 0 000-1 5 5 0 000-1 5 5 0 00-1-3 5 5 0 00-2-2 5 5 0 00-3 0 5 5 0 00-2 1 8 8 0 000 1V1a5 5 0 00-2-1 5 5 0 00-4 1 5 5 0 00-2 3 5 5 0 001 3 6 6 0 001 1l1 1 1 2 2 1 1 2h2l2-2 1-2 2-1 1-1a1 1 0 000-1 1 1 0 00-1 0z" fill="#383f4c"/></g></g></g>
-            </svg>
-          </a>
-        </div>
-        <div class="flex flex-no-wrap pb-2 border-b-2">
-          <div class="h-12 w-12 rounded shadow bg-blue-200 my-6 ml-3"></div>
-          <p class="flex-1 m-4 text-xs tracking-wide leading-loose">Student assistant for MedTech startup<br>
-            <span class="text-gray-500 tracking-wide leading-loose">BlueSense Diagnostics Aps</span><br>
-            <span class="text-gray-700 mr-2">Copenhagen &middot;</span>
-            <span class="text-gray-700 mx-2">Internship &middot;</span>
-            <span class="text-green-400 mx-2">95% match</span>
-          </p>
-          <a href="#" class="m-2">
-            <svg width="16" height="14.4"><g data-name="Group 3095"><g data-name="Group 2734"><g data-name="Group 2733"><path data-name="Path 1596" d="M14 7l-1 1-1 1-2 2-2 2-2-2-2-2-1-1-1-1a4 4 0 010-1 4 4 0 01-1-1 4 4 0 010-1 4 4 0 011-1 4 4 0 011-1 4 4 0 011-1 4 4 0 011 0 4 4 0 011 1 4 4 0 011 0 9 9 0 011 1 9 9 0 011-1 4 4 0 011 0 4 4 0 011-1 4 4 0 011 0 4 4 0 011 1 4 4 0 011 1 4 4 0 011 1 4 4 0 010 1 4 4 0 01-1 1 4 4 0 010 1 1 1 0 000 1 1 1 0 001 0 5 5 0 001-1 5 5 0 000-1 5 5 0 000-1 5 5 0 00-1-3 5 5 0 00-2-2 5 5 0 00-3 0 5 5 0 00-2 1 8 8 0 000 1V1a5 5 0 00-2-1 5 5 0 00-4 1 5 5 0 00-2 3 5 5 0 001 3 6 6 0 001 1l1 1 1 2 2 1 1 2h2l2-2 1-2 2-1 1-1a1 1 0 000-1 1 1 0 00-1 0z" fill="#383f4c"/></g></g></g>
-            </svg>
-          </a>
         </div>
       </div>
       <!-- Job listing jumbo details -->

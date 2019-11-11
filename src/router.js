@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Jobs from './components/Jobs.vue'
-import Companies from './components/Companies.vue'
-import Events from './components/Events.vue'
+import Jobs from './views/Jobs.vue'
+import Companies from './views/Companies.vue'
+import Events from './views/Events.vue'
 
 
 Vue.use(Router)

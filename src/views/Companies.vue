@@ -4,7 +4,7 @@
       <div class="flex flex-col shadow-inner mx-auto">
         <div class="flex flex-no-wrap pb-2 border-b-2">
           <div class="h-12 w-12 rounded shadow bg-blue-200 my-6 ml-3"></div>
-          <p class="flex-1 m-4 text-xs tracking-wide leading-loose">BlueSense Diagnostics Aps<br>
+          <p class="flex-1 m-4 text-xs tracking-wide leading-loose truncate w-64">BlueSense Diagnostics Aps<br>
             <span class="text-gray-500 tracking-wide leading-loose">Healthcare</span><br>
             <span class="text-gray-700 mr-2">Copenhagen &middot;</span>
             <span class="text-gray-700 mx-2">1-10 Employees &middot;</span>
