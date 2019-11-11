@@ -12,17 +12,17 @@ export default new Router ({
     {
       path: '/jobs',
       name: 'jobs',
-      component: 'Jobs'
+      component: Jobs
     },
     {
       path: '/companies',
       name: 'companies',
-      component: 'Companies'
+      component: Companies
     },
     {
       path: '/events',
       name: 'events',
-      component: 'Events'
+      component: Events
     }
   ]
 })
