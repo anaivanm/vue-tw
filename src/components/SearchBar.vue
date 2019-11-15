@@ -11,9 +11,9 @@
       <div>
         <input class="w-64 focus:outline-none focus:shadow-outline shadow mx-4 lg:my-0 my-1 px-6 py-2 rounded text-sm" placeholder="Search for a city or area">
       </div>
-      <a href="#" class="sm:w-14 inline-block mx-4 lg:my-0 my-1 px-6 py-2 rounded shadow-lg bg-red-500 text-white text-center tracking-wider text-sm focus:outline-none focus:shadow-outline hover:bg-red-600">Search</a>
+      <a href="#" class="sm:w-14 inline-block mx-2 lg:my-0 my-1 px-6 py-2 rounded shadow-lg bg-red-500 text-white text-center tracking-wider text-sm focus:outline-none focus:shadow-outline hover:bg-red-600">Search</a>
       <label for="filter-toggle" class="cursor-pointer block">
-        <div class="sm:w-14 inline-block mx-4 lg:my-0 my-1 px-6 py-2 rounded bg-gray-400 text-gray-500 text-center tracking-wider text-sm hover:bg-gray-600 focus:outline-none focus:shadow-outline">Filters</div>
+        <div class="sm:w-14 inline-block mx-2 lg:my-0 my-1 px-6 py-2 rounded bg-gray-400 text-gray-500 text-center tracking-wider text-sm hover:bg-gray-600 focus:outline-none focus:shadow-outline">Filters</div>
       </label>
     </div>
     <input type="checkbox" class="hidden" id="filter-toggle" />
@@ -22,203 +22,46 @@
       <div class="bg-gray-300 flex sm:flex-row flex-col justify-center py-4 items-center">
         <div class="flex flex-col mx-4 lg:my-0 my-1 text-xs">
           <label class="text-gray-800 font-semibold tracking-wider pb-1">Job type</label>
-          <div class="inline-flex  p-2">
-            <div class="flex flex-col w-32">
-              <label class="inline-flex items-center">
-                <input type="checkbox" class="form-checkbox">
-                <span class="ml-2">Full-time</span>
-              </label>
-              <label class="inline-flex items-center">
-                <input type="checkbox" class="form-checkbox">
-                <span class="ml-2">Part-time</span>
-              </label>
-              <label class="inline-flex items-center">
-                <input type="checkbox" class="form-checkbox">
-                <span class="ml-2">Internship</span>
-              </label>
-              <label class="inline-flex items-center">
-                <input type="checkbox" class="form-checkbox">
-                <span class="ml-2">Student</span>
-              </label>
-              <label class="inline-flex items-center">
-                <input type="checkbox" class="form-checkbox">
-                <span class="ml-2">Project</span>
-              </label>
-            </div>
-            <div class="flex flex-col w-32">
-              <label class="inline-flex items-center">
-                <input type="checkbox" class="form-checkbox">
-                <span class="ml-2">Graduate</span>
-              </label>
-              <label class="inline-flex items-center">
-                <input type="checkbox" class="form-checkbox">
-                <span class="ml-2">Temporary</span>
-              </label>
-              <label class="inline-flex items-center">
-                <input type="checkbox" class="form-checkbox">
-                <span class="ml-2">Thesis</span>
-              </label>
-              <label class="inline-flex items-center">
-                <input type="checkbox" class="form-checkbox">
-                <span class="ml-2">Freelance</span>
-              </label>
-              <label class="inline-flex items-center">
-                <input type="checkbox" class="form-checkbox">
-                <span class="ml-2">PhD / Research</span>
-              </label>
-            </div>
+            <div class="flex flex-col bg-white h-24 sm:w-32 w-64 overflow-scroll scrolling-auto p-2 rounded border-solid border-white border-b-8">
+            <label class="inline-flex items-center" v-bind:key="jobType" v-for="jobType in jobTypes">
+              <input type="checkbox" class="form-checkbox">
+              <span class="ml-2">{{ jobType }}</span>
+            </label>
           </div>
         </div>
         <div class="flex flex-col mx-4 lg:my-0 my-1 w-64 text-xs">
           <label class="text-gray-800 font-semibold tracking-wider text-xs pb-1">Category</label>
           <div class="flex flex-col bg-white h-24 overflow-scroll scrolling-auto p-2 rounded border-solid border-white border-b-8">
-            <label class="inline-flex items-center">
+            <label class="inline-flex items-center" v-for="(jobCategory, i) in jobCategories" v-bind:key="`${i}-${jobCategory}`">
               <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">IT og software</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">Salg og kundeservice</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">Projekt og drift</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">Finansiering og regnskab</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">Pleje og omsorg</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">Business og strategi</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">Medicin og sundhed</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">Maskinteknik</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">Markedsføring, sprog & kommunikation</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">Jura</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">Detailhandel</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">Elektroteknologi</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">HR og personalepleje</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">Hotel og turisme</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">Arkitektur og konstruktion</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">Supply chain og logistik</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">Administration</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">Kvalitetssikring og sikkerhed</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">Kreative & design</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">Uddannelse og træning</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">Klima, miljø og bæredygtighed</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">Biologi, bioteknologi og biokemi</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">Konsulent</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">Kunst og Kultur</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">Olie, gas og energi</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">Landbrug, skovbrug og maritime uddannelser</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">Kemi</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">Ejendomshandel</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">Matematik og fysik</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">Samfund og politik</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">Veterinærmedicin og dyrevidenskab</span>
+              <span class="ml-2">{{ jobCategory.name }}</span>
             </label>
           </div>
         </div>
-        <div class="flex flex-col mx-4 lg:my-0 my-1 sm:w-32 w-64 text-xs">
+        <div class="flex flex-col mx-4 lg:my-0 my-1 sm:w-20 w-64 text-xs">
           <label class="text-gray-800 font-semibold tracking-wider text-xs pb-1">I speak</label>
-          <div class="flex flex-col h-24 p-2">
-            <label class="inline-flex items-center">
+          <div class="flex flex-col h-24">
+            <label class="inline-flex items-center" v-bind:key="language" v-for="language in languages" @click="setLanguage(language)">
               <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">English</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox">
-              <span class="ml-2">Danish</span>
+              <span class="ml-2">{{ language }}</span>
             </label>
           </div>
         </div>
-        <div class="flex flex-col mx-4 lg:my-0 my-1 w-64">
+        <div class="flex flex-col mx-4 lg:my-0 my-1">
           <label class="text-gray-800 font-semibold tracking-wider text-xs pb-1">Keywords</label>
-          <div class="flex flex-col h-24 p-2">
-            <input class="rounded focus:outline-none focus:shadow-outline px-2 py-1 text-xs font-medium" placeholder="UX">
+          <div class="flex flex-col h-24">
+            <input type="text" v-model="state" class="rounded-t focus:outline-none p-1 border-b-2 border-gray-300 text-xs w-64 rounded-b-none" autocomplete="off" placeholder="UX" @input="filterStates" @focus="modal = true">
+            <div v-if="filteredStates && modal">
+              <ul class="overflow-scroll scrolling-auto pb-2 rounded-t-none rounded-b border-solid border-white h-16">
+                <li v-bind:key="filteredState" v-for="filteredState in filteredStates" class="cursor-pointer px-1 bg-white text-xs" @click="setState(filteredState)">{{ filteredState }}</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="w-32 mb-8">
-          <a href="#" class="text-gray-500">Reset Filter</a>
+        <div class="w-32 mb-12">
+          <label class="cursor-pointer block">
+            <div class="text-gray-500" @click="resetFilter">Reset Filter</div>
+          </label>
         </div>
       </div>
     </div>
@@ -228,7 +71,83 @@
 <script>
 export default {
   name: 'SearchBar',
-  props: {}
+  props: {},
+  data: function() {
+    return {
+      state: '',
+      selected: [],
+      modal: false,
+      jobCategories: [
+        {'id': '1', 'name': 'IT og software'},
+        {'id': '2', 'name': 'Salg og kundeservice'},
+        {'id': '3', 'name': 'Projekt og drift'},
+        {'id': '4', 'name': 'Finansiering og regnskab'},
+        {'id': '5', 'name': 'Pleje og omsorg'},
+        {'id': '6', 'name': 'Business og strategi'},
+        {'id': '7', 'name': 'Medicin og sundhed'},
+        {'id': '8', 'name': 'Maskinteknik'},
+        {'id': '9', 'name': 'Markedsføring, sprog & kommunikation'},
+        {'id': '10', 'name': 'Jura'},
+        {'id': '11', 'name': 'Detailhandel'},
+        {'id': '12', 'name': 'Elektroteknologi'},
+        {'id': '13', 'name': 'HR og personalepleje'},
+        {'id': '14', 'name': 'Hotel og turisme'},
+        {'id': '15', 'name': 'Arkitektur og konstruktion'},
+        {'id': '16', 'name': 'Supply chain og logistik'},
+        {'id': '17', 'name': 'Administration'},
+        {'id': '18', 'name': 'Kvalitetssikring og sikkerhed'},
+        {'id': '19', 'name': 'Kreative & design'},
+        {'id': '20', 'name': 'Uddannelse og træning'},
+        {'id': '21', 'name': 'Klima, miljø og bæredygtighed'},
+        {'id': '22', 'name': 'Biologi, bioteknologi og biokemi'},
+        {'id': '23', 'name': 'Konsulent'},
+        {'id': '24', 'name': 'Kunst og Kultur'},
+        {'id': '25', 'name': 'Olie, gas og energi'},
+        {'id': '26', 'name': 'Landbrug, skovbrug og maritime uddannelser'},
+        {'id': '27', 'name': 'Kemi'},
+        {'id': '28', 'name': 'Ejendomshandel'},
+        {'id': '29', 'name': 'Matematik og fysik'},
+        {'id': '30', 'name': 'Samfund og politik'},
+        {'id': '31', 'name': 'Veterinærmedicin og dyrevidenskab'},
+      ],
+      jobTypes: ['Full time', 'Student', 'Internship', 'Project', 'Graduate', 'Temporary', 'Volunteer', 'Thesis', 'Freelance', 'Phd / Research'
+      ],
+      languages: ['English', 'Danish'],
+      states: [
+        'UX', 'Elektroteknologi', 'Anvendt Kemi', 'Sales', 'Development', 'Design', 'IT og Økonomi', 'Kemiteknik og International Business', 'Bioteknologi', 'Softwareteknologi', 'Teknisk Biomedicin', 'Fysik og Nanoteknologi','Business Analytics', 'Transport og Logistik', 'Geofysik og Rumteknologi','Lyd og Akustisk Teknologi', 'Matematisk Modellering og Computing', 'Olie- og Gasteknologi','Telekommunikation', 'Produktion og Konstruktion', 'Netværksteknologi og IT'
+      ],
+      filteredStates: [],
+    }
+  },
+
+  mounted() {
+    this.filterStates();
+  },
+
+  methods: {
+    filterStates() {
+      if (this.state.length == 0) {
+        this.filteredStates = this.states;
+      }
+
+      this.filteredStates = this.states.filter(state => {
+          return state.toLowerCase().startsWith(this.state.toLowerCase());
+      });
+    },
+    setState(state) {
+      this.state = state
+      this.modal = false
+    },
+    resetFilter() {
+      this.state = ''
+    }
+  },
+
+  watch: {
+    state() {
+      this.filterStates();
+    }
+  }
 }
 </script>
 
